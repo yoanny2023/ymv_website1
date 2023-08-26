@@ -1,0 +1,498 @@
+/* google font */
+
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Leckerli+One&family=Pacifico&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+box-sizing:border-box; 
+}
+
+/* .body-class{
+  flex:1
+} */
+
+
+
+body{
+  min-height: 100vh;
+  background-color: #AAD7A3;
+  
+  color: #000027;
+  font-family: sans-serif;
+  margin: 0;
+
+  /* position: relative; */
+}
+
+
+/* .title-block{
+  width: 100%;
+ }  */
+
+
+
+.title{
+background-color: #0000A4;
+color: #FFFFFF;
+text-align: center;
+padding: 5px;
+border: 2px solid hsl(43, 100%, 50%);
+border-radius: 10px;
+font-size: 1.5rem;
+width: 100%;
+
+}
+
+span.uniq{
+  color: hsla(43, 100%, 50%, 0.767);
+}
+
+.img-background{
+  background-color: #333;
+  background-image: url(../img/backgrd.jpg);
+  background-repeat: no-repeat; 
+  background-position: center left ;
+  background-size:cover;
+}
+
+.profile{
+  border: 4px double black; 
+ /*  background-color: #333;
+  background-image: url(../img/background1.jpg); */
+  /* background-size:cover;
+
+  background-repeat: no-repeat; 
+
+ */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 100%;
+  
+
+}
+
+img{
+  width: 150px ; 
+  height: 150px ; 
+  border-radius: 50%;
+  
+  border: 5px double whitesmoke;
+  margin: 20px;
+margin:  0 auto;
+
+
+}
+
+figcaption{
+  color: hsla(43, 100%, 50%, 0.767);
+  font-size: 2.6rem;
+  font-family: 'Leckerli One', cursive;
+  padding-left: 20px  ;
+}
+
+
+
+p.details {
+  text-align: justify;
+  padding: 5px 20px;
+ 
+line-height: 1.4;
+font-size: 1rem;
+}
+
+.main-content span{
+  color: #3F0048;
+  font-weight: 800;
+}
+
+.skill{
+  display: grid;
+ /*  grid-template-columns:  repeat(3,1fr);
+  grid-template-rows: 1fr; */
+  grid-template-columns: 1fr ;
+  grid-template-rows: repeat(3,1fr);
+  gap:10px;
+  margin: 20px;
+  
+}
+
+.box{
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+
+  
+}
+
+.box h3{
+  color: #3F0048;
+  text-align: center;
+  padding: 5px;
+  text-decoration: underline;
+  
+}
+
+.box:nth-child(1){
+   /*  height: 200px; */
+  background-color: #eee8aa;
+  color: #000;
+  border: 2px solid #0000A4;
+  border-radius: 10px;
+  flex: 1;
+
+}
+
+.box:nth-child(2){
+ /*  height: 200px; */
+  background-color: #eee8aa;
+  color: #000;
+  border: 2px solid #0000A4;
+  border-radius: 10px;
+  flex: 1;
+}
+
+.box:nth-child(3){
+ /*  height: 200px; */
+  background-color: #eee8aa;
+  color: #000;
+  border: 2px solid #0000A4;
+  border-radius: 10px;
+  flex: 1;
+}
+
+
+
+.footer{
+  width: 100%;
+
+  
+}
+footer{
+  background-color: #0000A4;
+  border: 2px solid hsla(43, 100%, 50%, 0.767);
+border-radius: 10px;
+  width: 100%;
+
+
+
+}
+.link {
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+ padding: 5px;
+
+
+  
+}
+
+.link a{
+  color: wheat;
+  cursor:pointer;
+  
+}
+
+.link a:hover{
+  color: green;
+}
+
+.link a:visited{
+  color:#B3FFFF;
+}
+
+h2{
+  background-color: #0000A4;
+  color:#FFFFFF ;
+  text-align: center;
+  padding: 5px;
+  border: 2px solid hsla(43, 100%, 50%, 0.767);
+  border-radius: 10px;
+  width: 100%;
+}
+
+.fa-brands{
+  color:wheat ;
+  font-size: 1rem;
+  
+}
+
+.fa-solid{
+  color:wheat ;
+  font-size: 1rem;
+}
+/* Tablet, Ipad */
+@media screen and (min-width: 481px) and (max-width:768px) {
+
+  p.details {
+    font-size: 1rem;
+    }
+
+  .box h3{
+    font-size: 1.1rem;
+    
+  }
+  .profile{
+
+    position: relative;
+    
+  }
+  
+  img{
+    width: 200px ;
+    height: 200px ;
+    position: absolute;
+    left: 10px;
+   
+  
+  }
+  
+  figcaption{
+    position: absolute;
+    font-size: 2.2rem;
+    right: 10px;
+    
+  }
+
+
+    .skill{
+      display: grid;
+      grid-template-columns:  repeat(3,1fr);
+      grid-template-rows: 1fr;
+     
+    }
+}
+
+/* Laptop*/
+@media screen and (min-width: 769px) and (max-width:1024px) {
+
+  .title{
+
+    font-size: 3rem;
+    
+    }
+
+    h2{
+      font-size: 2rem;
+    }
+
+    .box h3{
+      font-size: 2rem;
+      
+    }
+
+    p.details {
+      font-size: 1.5rem;
+      }
+
+      .topics p{
+        
+        font-size: 2rem;
+       padding: 50px;
+      }
+
+  .profile{
+
+    position: relative;
+    
+  }
+  
+  img{
+    width: 250px ;
+    height: 250px ;
+    position: absolute;
+    left: 20px;
+   
+  
+  }
+  
+  figcaption{
+    position: absolute;
+    font-size: 4rem;
+    right: 10px;
+    
+  }
+
+  .link {
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+}
+
+/* Desktop */
+@media screen and (min-width: 1025px) and (max-width:1200px) {
+
+/*   body{
+    background-color: aliceblue;
+  } */
+
+  .title{
+
+    font-size: 3rem;
+    
+    }
+
+    h2{
+      font-size: 2rem;
+    }
+
+  p.details {
+    font-size: 1.5rem;
+    }
+
+  .box h3{
+    color: #3F0048;
+    text-align: center;
+    padding: 5px;
+    font-size: 2rem;
+    
+  }
+
+  .topics p{
+        
+    font-size: 2rem;
+   padding: 50px;
+  }
+
+  .profile{
+
+    position: relative;
+    
+  }
+  
+  img{
+    width: 250px ;
+    height: 250px ;
+    position: absolute;
+    left: 20px;
+    margin-right: 0px;
+  
+  }
+  
+  figcaption{
+    position: absolute;
+    font-size: 6rem;
+    right: 10px;
+  }
+  .link {
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+
+  .link a {
+   font-size: 1.5rem;
+    
+  }
+
+  .link span{
+    font-size: 1.5rem;
+  }
+}
+
+/* TV Screen */
+@media screen and (min-width: 1201px)  {
+/* body{
+  background-color: black;
+} */
+
+.title{
+
+  font-size: 3rem;
+  
+  }
+
+p.details {
+
+font-size: 1.5rem;
+}
+h2{
+  font-size: 2rem;
+}
+
+.box h3{
+  color: #3F0048;
+  text-align: center;
+  padding: 5px;
+  font-size: 2rem;
+  
+}
+
+.topics p{
+        
+  font-size: 2rem;
+ padding: 50px;
+}
+
+.link {
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.link a {
+  font-size: 1.5rem;
+   
+ }
+
+ .link span{
+   font-size: 1.5rem;
+ }
+
+ .fa-brands{
+  color:wheat ;
+  font-size:1.5rem;
+  
+}
+
+.fa-solid{
+  color:wheat ;
+  font-size: 1.5rem;
+}
+
+.profile{
+
+  position: relative;
+  
+
+}
+
+img{
+  width: 250px ;
+  height: 250px ;
+  position: absolute;
+  left: 20px;
+  margin-right: 0px;
+
+}
+
+figcaption{
+  position: absolute;
+  right: 10px;
+  font-size: 6rem;
+
+  background-size: 10px;
+  
+}
+}
+
+
+
+
